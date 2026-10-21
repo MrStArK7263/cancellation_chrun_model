@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: churn-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: MODEL_VERSION
+        value: "1.0.0"
+      - key: MODEL_PATH
+        value: model/churn_model_v1.0.0.joblib
+      - key: THRESHOLD
+        value: "0.5"

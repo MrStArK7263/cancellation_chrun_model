@@ -1,0 +1,28 @@
+{
+  "model_name": "Random Forest (tuned)",
+  "model_version": "1.0.0",
+  "target": "Churned",
+  "numeric_features": [
+    "BaseFee",
+    "NumberOfPenalties",
+    "CurrentPeriodUsage",
+    "PriorPeriodUsage",
+    "ServiceRating",
+    "ServiceTickets",
+    "UsageChange",
+    "PenaltyFeeInteraction"
+  ],
+  "categorical_features": [
+    "Promotion",
+    "HasRenewed",
+    "PlanType"
+  ],
+  "metrics_on_test": {
+    "Accuracy": 0.9304,
+    "Precision": 0.708,
+    "Recall": 0.8791,
+    "F1": 0.7843,
+    "ROC-AUC": 0.9605,
+    "Inference ms / 632 rows": 118.2272
+  }
+}
